@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+body, h1, p /* h1하고 p에 마진 0으로 준 이유는 자체마진때문에 넓어보이기 때문이다. */
+{
+    margin: 0px;
+    user-select: none;
+}
+
+body
+{
+    font-size: 10px;
+}
+
+
+.row
+{
+    width: 1060px;
+    display: flex;
+    background-color: rgba(127, 255, 212, 0);
+    margin: auto; /*사이트 가운데 정렬 = margin: auto */
+    padding: 0px 0x; /* 그냥 마진으로만 주면, 왼오가 10px이 아니라 5px이므로 패딩으로 더해준다. */
+    margin-bottom: 0px auto;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    
+
+}
+
+
+.col-1{ width: 8.33%; padding: 0px 20px 0px 0px;}
+.col-2{ width: 16.66%; padding: 0px 20px 0px 0px;}
+.col-3{ width: 24.99%; padding: 0px 20px 0px 0px;}
+.col-4{ width: 33.33%; padding: 0px 20px 0px 0px;}
+.col-5{ width: 41.65%; padding: 0px 20px 0px 0px;}
+.col-6{ width: 50%; padding: 0px 20px 0px 0px;}
+.col-7{ width: 58.33%; padding: 0px 20px 0px 0px;}
+.col-8{ width: 66.66%; padding: 0px 20px 0px 0px;}
+.col-9{ width: 75%; padding: 0px 20px 0px 0px;}
+.col-10{ width: 83.33%; padding: 0px 20px 0px 0px;}
+.col-11{ width: 91.64%; padding: 0px 20px 0px 0px;}
+.col-12{ width: 100%; padding: 0px 0px 0px 0px;}
+
+/* a태그의 스타일 (헤더 + 식물페이지 + 식물페이지의 '뒤로')*/
+
+
+/*
+.a_1
+{
+    color: rgb(179, 26, 26);
+    text-decoration-line: none;
+}
+*/
+
+
+.a_2
+{
+    color: black;
+    text-decoration-line: none;
+
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.a_2:hover
+{
+    color: rgba(0, 0, 0, 0.151);
+}
+
+
+
+.a_3
+{
+    color:rgba(255, 255, 255, 0.651);
+    text-decoration-line: none;
+    display: inline-flex;
+    font-size: 0.8rem;
+    font-weight: 400;
+    background-color: #ee5457b0;
+    border-radius: 5px;
+
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.a_3:hover
+{
+    color:rgb(255, 255, 255);
+    background-color: #ffeb37;
+}
+
+
+.a_4
+{
+    color: #5b8055;
+    text-decoration-line: none;
+    text-indent: 50.1px;
+
+    transition-property: all;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in;
+}
+
+.a_4:hover
+{
+    color: #a0db40;
+}
+
+/*가상온실 소개 버튼*/
+#sideBar
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    padding: 6px 0px 0px 0px;
+    width: 166px;
+    height: 40px;
+    border-radius: 30px;
+    border: 20px;
+    border-color: black;
+    background-color: rgba(58, 90, 21, 0.616);
+    font-weight: 500;
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+
+}
+
+
+#multiMenu
+{
+    position: relative; 
+    list-style: none;
+    color: rgb(250, 255, 183);
+
+
+    transition-property: color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in;
+}
+
+#multiMenu:hover
+{
+    color: #f53d3d;
+}
+
+
+#subMenu
+{
+    list-style: none;
+    padding: 0px 0px;
+    display: none;
+}
+
+#menuItem
+{
+    text-align: left;
+    width: 350px;
+    height: 40px;
+    list-style: none;
+    font-size: 1.02rem;
+    margin-left: 10px;
+    color: rgb(38, 58, 39);
+    font-weight:700;
+    text-shadow: 0.42px 0.42px 0.8px #ffeb37;
+    padding: 4px 0px;
+}
+
+
+#subMenu.show
+{
+    display: block;
+}
+
+
+/* 헤더 */
+
+header
+{
+margin-top: 10px;
+}
+
+#topMargin
+{
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+#line_0
+{
+    width: 1060px; height: 2px;
+    background-color: black;
+    margin-top: 60px;
+    display: flex;
+    position:absolute;
+
+}
+
+
+#line_1
+{
+    width: 1060px; height: 2px;
+    background-color: black;
+    margin: auto;
+}
+
+
+#line_2
+{
+    position:absolute;
+    width: 1060px; height: 2px;
+    background-color: black;
+    margin-top: 60px;
+    
+}
+
+
+#line_3
+{
+    width: 1060px; height: 2px;
+    background-color: black;
+    margin-top: -10px;
+    display: flex;
+    position:absolute;
+}
+
+#line_4
+{
+    width: 1060px; height: 2px;
+    background-color: black;
+    margin-top: -10px;
+    display: flex;
+    position:absolute;
+}
+
+
+#line_5
+{
+    width: 1060px; height: 2px;
+    background-color: black;
+    margin-top: -10px;
+    display: flex;
+    position:absolute;
+}
+
+
+/* 헤더 */
+
+#mainMain
+{
+    height: 850px;
+    margin-top: 70px;
+    position: relative;
+}
+
+/* 사이트 소개 부분 */
+
+#vgButton
+{
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+    border: 20px;
+    border-color: black;
+    background-color: rgba(58, 90, 21, 0.884);
+    font-weight: 900;
+    font-size: 1.35rem;
+    color: rgb(250, 255, 183);
+    margin-bottom: 12px;
+}
+
+
+#introVg
+{
+    font-size: 1.02rem;
+    margin-left: 10px;
+    color: rgba(38, 58, 39, 0.856);
+    font-weight:700;
+    text-shadow: 0.2px 0.2px 0.5px tomato;
+}
+
+
+
+#mainIMG
+{
+    position: absolute;
+}
+
+
+/* i 버튼 부분 */
+
+.i{position: absolute;}
+
+#i_1{margin-top: 200px; margin-left: 7px;}
+ 
+#i_2{margin-top: 190px; margin-left: 50px;}
+
+#i_3{margin-top: 350px; margin-left: 35px;}
+
+#i_4{margin-top: 430px; margin-left: 50px;}
+
+#i_5{margin-top: 310px; margin-left: 5px;}
+
+#i_6{margin-top: 480px; margin-left: 90px;}
+
+#i_7{margin-top: 650px; margin-left: 40px;}
+
+#i_8{margin-top: 680px; margin-left: 50px;}
+
+#i_9{margin-top: 760px; margin-left: 90px;}
+
+#i_10{margin-top: 350px;}
+
+
+/*썸네일*/
+
+.thmbMargin_1
+{margin-top: 60px;
+margin-bottom: 30px;}
+
+.thmbMargin_2
+{margin-bottom: 30px;}
+
+.thmbMargin_3
+{margin-bottom: 30px;}
+
+.thmbMargin_4
+{margin-bottom: 30px;}
+
+.thumbnail
+{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color:white;
+}
+
+
+.img
+{   
+    position: absolute;
+    width: 250px;
+    height: 250px;
+}
+
+.imgTag
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: luminosity;
+}
+
+
+.imgTag.on
+{
+    mix-blend-mode: normal;
+}
+
+.textField
+{
+    position: absolute;    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0);
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition-property: color,;
+    transition-duration: 0.25s;
+}
+
+.textField.on
+{
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+
+
+
+/* 뒤로 버튼 부분 */
+
+#back
+{
+    margin-top: 48px;
+    margin-bottom: 48px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* 식물소개 세부페이지 */
+
+#plantPhotoLayout {margin-bottom: 30px;}
+
+#plantPhotoLayout_2 {margin-bottom: -50px;}
+
+#plantName
+{
+    font-weight: 900;
+    font-size: 1.9rem;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+#plantIntroduction
+{
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+.indent
+{
+    margin-left: 7px;
+}
+
+#indent_2
+{
+    margin-left: 28px;
+}
+
+
+/* 책 슬라이드 이미지 */
+
+
+#slider
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+#imageContainer
+{
+    width: 1060px;
+    height: 850px;
+    display: flex;
+    overflow: hidden;
+}
+
+
+#imageSlider
+{
+    width: 3180px;
+    display: flex;
+    transition: transform 0.5s;
+}
+
+
+
+#interFace
+{
+    width: 1060px;
+    height: 850px;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+#leftArrow
+{
+    position: absolute;
+    left: 5px;
+    top: 340px;
+}
+
+
+
+#rightArrow
+{
+    position: absolute;
+    right: 5px;
+    top: 340px;
+    transform: scaleX(-1);
+}
+
+
+#bottomBtn
+{
+
+    display: flex;
+    width: 300px;
+    height: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#bottomBtn button
+{
+    padding: 4px 42px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.116);
+}
+
+
+#bottomBtn button:hover
+{
+    background-color: rgba(0, 0, 0, 0.288);
+}
+
+
+
+
+/* 푸터 */
+
+
+footer
+{
+    display:flex;
+    position: relative;
+    margin-top: 70px;
+}
+
+
+    
+#footer1
+{
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+#footer2
+{
+    font-weight: 500;
+    font-size: 0.6rem;
+}
+
+#footer3
+{
+    font-weight: 500;
+    font-size: 0.6rem;
+    margin-bottom: 20px;
+}
+
+#footer4
+{
+    font-weight: 900;
+    font-size: 1.27rem;
+    text-align: right;
+    margin-top: 10px;
+}
+
+#footer5
+{
+    font-weight: 500;
+    font-size: 0.1rem;
+    text-align: right;
+}
+
+.footerLastCol{padding-right: 0px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.myText{
+font-family: 'Noto Sans KR', sans-serif;
+font-size: 1rem;
+font-weight: 300;
+font-variant: small-caps;
+line-height: 1.6;
+text-align: left;
+text-decoration : none;
+text-shadow: 2px 2px 3px gray;
+text-indent : 1rem;
+}
+*/
+
+
+
+/*
+<div class="row">
+<div class="col-1"></div>
+<div class="col-2" id="가상온실이란">
+    <img src="img/가상온실이란.png" width="160px" height="40px">
+</div>
+<div class="col-1"></div>
+<div class="col-1"></div>
+<div class="col-1"></div>
+<div class="col-1"></div>
+<div class="col-1"></div>
+<div class="col-1"></div>
+<div class="col-1"></div>
+<div class="col-1"></div>
+<div class="col-1"></div>
+</div>
+
+
+<div class="row" id="본문아래">
+<div class="col-1"></div>
+<div class="col-7" id="본문">
+    <p>*코로나 속 밖을 잘 돌아다니지 못하는 이들을 위한 가상온실로</p>
+    <p>푸른 잎을 지닌 식물을 자세히 볼 수 있고 관찰할 수 있는 공간입니다.</p>
+</div>
+<div class="col-1"></div>
+<div class="col-1"></div>
+<div class="col-1"></div>
+<div class="col-1"></div>
+</div>
+*/
